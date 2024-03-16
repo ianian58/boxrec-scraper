@@ -1,0 +1,33 @@
+Champion Indicator: The champion is marked with a crown icon (<i class="fas fa-crown"></i>). 
+This icon signifies the top-ranked boxer.
+
+Ranking: Boxer rankings are either directly indicated by numbers or by a crown icon for the champion. 
+The ranking is found within a <span> tag styled for emphasis.
+
+Nationality: A boxer's nationality is indicated by a flag-icon class on a <span> element. 
+The country code is part of the class name, e.g., flag-icon-ua for Ukraine.
+
+Name: Located within an <a> tag with the personLink class, providing the boxer's name.
+
+Record: The boxer's fight record (wins, losses, draws) is split into separate <span> elements.
+ Each with a specific class (textWon, textLost, textDraw).
+
+Age: The boxer's age is displayed plainly in a column.
+
+Last 6 Fights: This is shown through a series of images in one column. 
+With the image source (src) indicating the fight outcome (l6w.svg for win, etc.).
+
+Residence: Detailed with nested <a> tags for more granular location information (town/city, region, country).
+
+Special Note: After the 24th entry (se24), there are two line skips in the table, which might affect parsing.
+This can be handled by skipping or special processing of these rows.
+
+Example:
+
+<tr class="oddRow" id="se0"><td class="drawRowBorder"><span style="font-size:1.2em;font-weight:bold;"><span style="font-weight:bold;"><i class="fas fa-crown" style="color:#f6b501 !important;"></i></span></span>
+</td><td class="drawRowBorder">  <span class="flag-icon flag-icon-ua" style="margin-right: 5px;padding-bottom;float:left;"></span><a href="/en/box-pro/659772" class="personLink">Oleksandr Usyk</a>*</td><td class="drawRowBorder"><div style="float:left;">
+<div style="width:80px;"><span><i class="fas fa-star star-icon -star"></i><i class="fas fa-star star-icon -star"></i><i class="fas fa-star star-icon -star"></i><i class="fas fa-star star-icon -star"></i><i class="fas fa-star star-icon -star"></i></span></div>
+</div></td><td class="drawRowBorder">  <span class="textWon">21</span>&nbsp;<span class="textLost">0</span>&nbsp;<span class="textDraw">0</span>
+</td><td class="drawRowBorder">  37
+</td><td nowrap="" class="drawRowBorder" style="width:90px;"><div style="float:left;">      <img src="https://boxrec.com/build/images/main/l6w.svg" width="8px" height="28px"><img src="https://boxrec.com/build/images/main/l6w.svg" width="8px" height="28px"><img src="https://boxrec.com/build/images/main/l6w.svg" width="8px" height="28px"><img src="https://boxrec.com/build/images/main/l6w.svg" width="8px" height="28px"><img src="https://boxrec.com/build/images/main/l6w.svg" width="8px" height="28px"><img src="https://boxrec.com/build/images/main/l6w.svg" width="8px" height="28px">
+</div></td><td class="drawRowBorder"><span class="flag-icon flag-icon-us" style="margin-right: 3px"></span><a href="/en/locations/event?level=t&amp;level_id=17964&amp;loc_txt=Oxnard">Oxnard</a>, <a href="/en/locations/event?level=r&amp;level_id=448&amp;loc_txt=California">California</a>, <a href="/en/locations/event?level=c&amp;level_id=US&amp;loc_txt=USA">USA</a></td><td nowrap="" class="actionCell drawRowBorder" style="position:relative;"></td></tr>
